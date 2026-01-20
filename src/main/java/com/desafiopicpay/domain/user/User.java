@@ -1,10 +1,8 @@
 package com.desafiopicpay.domain.user;
 
+import com.desafiopicpay.dto.UserDTO;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 import java.math.BigDecimal;
 
@@ -13,6 +11,7 @@ import java.math.BigDecimal;
 @Getter
 @Setter
 @AllArgsConstructor
+@NoArgsConstructor
 @EqualsAndHashCode(of = "id")
 public class User {
     @Id
@@ -22,10 +21,10 @@ public class User {
     private String firstName;
     private String lastName;
 
-    @Column(unique = true, nullable = false)
+    @Column(unique = true)
     private String document;
 
-    @Column(unique = true, nullable = false)
+    @Column(unique = true)
     private String email;
 
     private String password;
@@ -33,4 +32,13 @@ public class User {
 
     @Enumerated(EnumType.STRING)
     private UserType userType;
+
+    public User(UserDTO data) {
+        this.firstName = data.firstname();
+        this.lastName = data.lastName();
+        this.email = data.email();
+        this.balance = data.balance();
+        this.userType = data.userType();
+        this.password = data.password();
+    }
 }
