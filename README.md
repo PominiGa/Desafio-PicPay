@@ -59,7 +59,7 @@ Sistema de transferência de dinheiro que implementa a transferência entre usu�
 
 1. **Clone o repositório**
 ```bash
-git clone <seu-repositorio>
+git clone https://github.com/PominiGa/Desafio-PicPay?tab=readme-ov-file#visão-geral
 cd desafiopicpay
 ```
 
