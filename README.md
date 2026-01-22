@@ -224,8 +224,6 @@ spring.h2.console.enabled=true
 spring.h2.console.path=/h2-console
 ```
 
----
-
 
 ## 👨‍💻 Contribuição
 
@@ -249,6 +247,6 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 
 **Desenvolvedor**: Gabriel Pomini de Souza
 
-- Email: seu.email@example.com
+- Email: gabriel.souza53@hotmail.com
 - LinkedIn: [Gabriel-Pomini](https://www.linkedin.com/in/gabriel-pomini-43aa731ba/)
 - GitHub: [@PominiGa](https://github.com/PominiGa)
